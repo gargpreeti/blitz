@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1">
+
+    <com.zoptal.blitz.common.InteractiveScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linear"
+            android:orientation="vertical">
+<RelativeLayout
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_backarrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/backarrowgray"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <com.zoptal.blitz.common.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Store"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+           android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_centerVertical="true"
+        android:textSize="35dp"
+        android:text="+"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"></LinearLayout>
+
+
+            <com.zoptal.blitz.common.MyTextView
+                android:visibility="gone"
+                android:id="@+id/tv_msgnostore"
+                android:layout_gravity="center_horizontal"
+               android:gravity="center_vertical"
+                android:text="No store found"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="30dp"
+                android:scrollbars="vertical">
+
+            </ListView>
+
+</LinearLayout>
+
+        </com.zoptal.blitz.common.InteractiveScrollView>
+    </LinearLayout>

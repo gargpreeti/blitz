@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:weightSum="4">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_range"
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            android:text="101 to +"
+            android:gravity="center"
+            android:textColor="#808080"
+            android:layout_height="wrap_content" />
+        <!--<View android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#000"/>-->
+        <TextView
+            android:id="@+id/tv_refer"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="demo"
+            android:textColor="#808080"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <!--<View android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#000"/>-->
+        <TextView
+            android:id="@+id/tv_revenue"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="demo"
+            android:gravity="center"
+            android:textColor="#808080"
+            android:layout_height="wrap_content" />
+        <!--<View android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#000"/>-->
+        <TextView
+            android:id="@+id/tv_bonus"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="demo"
+            android:textColor="#808080"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#000"/>-->
+</LinearLayout>

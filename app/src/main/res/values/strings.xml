@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Blitz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings"></string>
+    <string name="openDrawer">open</string>
+    <string name="closeDrawer">close</string>
+    <!--<string name="gcm_defaultSenderId">966200936128</string>-->
+    <string name="facebook_app_id">833776346762901</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="font_timeburner_bold">timeburnerbold.ttf</string>
+    <string name="font_timeburner_normal">timeburnernormal.ttf</string>
+    <string name="network_connection">Please Check your internet connection</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/coloroffwhite"
+      android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <RelativeLayout
+
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rel_list"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_name"
+            android:text="Dummy name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+             android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+        <com.zoptal.blitz.common.MyTextView
+            android:layout_below="@+id/tv_name"
+            android:id="@+id/tv_address"
+            android:text="Dummy text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+
+
+<RelativeLayout
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/rel_dltstore"
+    android:layout_alignParentRight="true"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/img_dlt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+
+            android:background="@drawable/delete_icon"/>
+</RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

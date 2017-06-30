@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ffffff"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp">
+
+        <TextView
+
+            android:id="@+id/bck"
+            android:background="@mipmap/backarrowgray"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+
+
+         android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zoptal.blitz.common.MyTextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text=""
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:background="@mipmap/menu_bar"
+            android:id="@+id/img_menubar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="10dp"
+           />
+        <ImageView
+            android:background="@drawable/search_icon"
+            android:id="@+id/img_srch"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+          />
+
+        <ImageView
+            android:visibility="gone"
+            android:background="@drawable/delete_icon"
+            android:id="@+id/img_dltall"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:visibility="gone"
+            android:background="@drawable/star"
+            android:id="@+id/img_star"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:background="@mipmap/crossblack"
+            android:id="@+id/img_cross"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+
+            />
+        <!--<ImageView-->
+            <!--android:id="@+id/srch1"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginRight="0dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@mipmap/search"-->
+
+            <!--/>-->
+        <EditText
+            android:id="@+id/ed_srch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:textColor="#808080"
+            android:layout_marginRight="20dp"
+            android:imeOptions="actionSearch"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="#302201"-->
+    <!--android:elevation="4dp"-->
+    <!--android:theme="@style/ThemeOverlay.AppCompat.Dark"-->
+   <!-->-->
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="30dp"-->
+
+
+        <!-->-->
+        <!--<TextView-->
+            <!--android:id="@+id/bck"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@mipmap/back"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:textColor="#ffffff"/>-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="23dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:id="@+id/textView3"-->
+             <!--android:background="@mipmap/logo"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+           <!--></TextView>-->
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/srch"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@mipmap/search"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginRight="0dp"-->
+            <!--android:layout_marginTop="10dp"-->
+
+            <!--/>-->
+ <!--<EditText-->
+     <!--android:id="@+id/ed_srch"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+     <!--android:layout_marginLeft="20dp"-->
+     <!--android:visibility="invisible"/>-->
+
+
+     <!--</RelativeLayout>-->
+
+
+<!--</android.support.v7.widget.Toolbar>-->

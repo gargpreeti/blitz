@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/coloroffwhite"
+      android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.zoptal.blitz.common.MyTextView
+    android:id="@+id/tv_storename"
+    android:text="Dummy text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    android:textSize="15dp"
+     android:layout_marginRight="40dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"/>
+
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_address"
+            android:text="company address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv_storename"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <com.zoptal.blitz.common.MyTextView
+            android:layout_below="@+id/tv_address"
+            android:id="@+id/tv_colr"
+            android:layout_width="42dp"
+            android:layout_height="10dp"
+            android:textColor="#808080"
+            android:textSize="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/img_dlt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/delete_icon"/>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/ed_oldpw"
+           android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:background="#a9a9a9"></LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

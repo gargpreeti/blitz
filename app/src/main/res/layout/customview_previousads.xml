@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+
+        android:id="@+id/relative_list"
+        android:layout_marginTop="5dp"
+       android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.zoptal.blitz.common.MyTextView
+    android:id="@+id/tv_name"
+    android:hint="Test resturant"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:textColor="#808080"
+    android:textSize="14dp"
+     android:layout_marginRight="5dp"
+    android:layout_marginBottom="3dp"
+      android:layout_marginLeft="10dp"/>
+
+
+       <com.zoptal.blitz.common.MyTextView
+            android:layout_below="@+id/tv_name"
+            android:id="@+id/tv_headingname"
+            android:hint="Test heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:textSize="12dp"
+           android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <com.zoptal.blitz.common.MyTextView
+            android:layout_below="@+id/tv_headingname"
+            android:id="@+id/tv_colr"
+            android:layout_width="42dp"
+            android:layout_height="10dp"
+            android:textColor="#808080"
+            android:textSize="12dp"
+            android:layout_marginRight="5dp"
+           />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:background="#a9a9a9"
+        android:orientation="horizontal"></LinearLayout>
+
+</LinearLayout>

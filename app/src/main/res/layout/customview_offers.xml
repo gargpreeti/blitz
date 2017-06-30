@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+
+        android:id="@+id/relative_list"
+        android:layout_marginTop="5dp"
+       android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.zoptal.blitz.common.MyTextView
+    android:id="@+id/tv_name"
+    android:text="Test resturant"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    android:textSize="14dp"
+     android:layout_marginRight="5dp"
+    android:layout_marginBottom="3dp"
+      android:layout_marginLeft="10dp"/>
+
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_remaining"
+            android:text="Remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:alpha="0.8"
+            android:textSize="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+        <com.zoptal.blitz.common.MyTextView
+            android:layout_below="@+id/tv_name"
+            android:id="@+id/tv_headingname"
+            android:text="Test heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:textSize="14dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <com.zoptal.blitz.common.MyTextView
+            android:layout_below="@+id/tv_headingname"
+            android:id="@+id/tv_colr"
+            android:layout_width="42dp"
+            android:layout_height="10dp"
+            android:textColor="#808080"
+            android:textSize="12dp"
+            android:layout_marginRight="5dp"
+           />
+
+        <ImageView
+          android:id="@+id/img_watch"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/tv_remaining"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/tv_time"
+           android:background="@drawable/watch"/>
+
+        <com.zoptal.blitz.common.MyTextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:hint="03.49.40"
+            android:alpha="0.9"
+            android:textAllCaps="false"
+            android:layout_below="@+id/tv_remaining"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+           />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:background="#a9a9a9"></LinearLayout>
+
+</LinearLayout>

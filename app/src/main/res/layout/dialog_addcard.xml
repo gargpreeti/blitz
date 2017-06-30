@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    android:background="@drawable/popupbck"
+
+      >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+         android:background="@drawable/crosswhite"
+            android:layout_gravity="right"
+            android:layout_marginTop="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="1dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:background="@mipmap/popup"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img_newcard"
+            android:background="@mipmap/disablecircle"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"/>
+
+
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_new_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use New Card"
+            android:textColor="#000000"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="14dp"
+            android:alpha="0.7"
+            android:layout_toRightOf="@+id/img_newcard"/>
+
+        <RelativeLayout
+            android:id="@+id/rel_useoldcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+             android:layout_toLeftOf="@+id/tv_oldcard"
+                android:id="@+id/img_oldcard"
+                android:background="@mipmap/disablecircle"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+
+            <com.zoptal.blitz.common.MyTextView
+                android:id="@+id/tv_oldcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use Old Card"
+                android:textColor="#000000"
+                android:layout_marginTop="26dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="14dp"
+                android:alpha="0.7"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"/>
+</RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.zoptal.blitz.common.EditTextView
+            android:id="@+id/ed_cardnum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Card Number"
+            android:alpha="0.6"
+            android:padding="3dp"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:textSize="16dp" />
+        <LinearLayout
+            android:alpha="0.6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#808080"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></LinearLayout>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/review_submit"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backimg">
+
+    <com.zoptal.blitz.common.InteractiveScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linear"
+            android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/logo"
+        android:layout_marginTop="20dp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/viewdeals_signin"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"/>
+
+    <com.zoptal.blitz.common.EditTextView
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Email"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:background="@drawable/edittextstyle"/>
+    <com.zoptal.blitz.common.EditTextView
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Password"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:background="@drawable/edittextstyle"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_keepmesigned"
+                    android:background="@mipmap/disablecircle"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="50dp"/>
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/img_keepmesignedselectd"
+                    android:background="@drawable/circleselected"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="50dp"/>
+                <com.zoptal.blitz.common.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keep me signed in"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="80dp"
+                    android:textSize="14dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_signin"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="45dp">
+                <com.zoptal.blitz.common.MyTextView
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN IN"
+                    android:textSize="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    />
+
+            </RelativeLayout>
+
+
+    <com.zoptal.blitz.common.MyTextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+          android:layout_gravity="center_horizontal"
+       />
+
+    <Button
+        android:id="@+id/btn_forgotpw"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@mipmap/forgot_password"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+            <com.zoptal.blitz.common.MyTextView
+                android:id="@+id/tv_signuppost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up As Post Deals"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:textSize="14dp"
+                android:layout_gravity="center_horizontal"
+                />
+</LinearLayout>
+
+        </com.zoptal.blitz.common.InteractiveScrollView>
+    </LinearLayout>

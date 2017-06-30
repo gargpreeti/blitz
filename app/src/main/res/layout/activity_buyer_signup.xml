@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backimg">
+
+    <com.zoptal.blitz.common.InteractiveScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linear"
+            android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/logo"
+        android:layout_marginTop="20dp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/viewdeals_signup"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"/>
+
+            <com.zoptal.blitz.common.EditTextView
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:hint="Name"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:background="@drawable/edittextstyle"/>
+
+    <com.zoptal.blitz.common.EditTextView
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Email"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:background="@drawable/edittextstyle"/>
+    <com.zoptal.blitz.common.EditTextView
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:background="@drawable/edittextstyle"/>
+
+            <com.zoptal.blitz.common.EditTextView
+                android:id="@+id/ed_confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:background="@drawable/edittextstyle"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/btn_signup"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="45dp">
+                <com.zoptal.blitz.common.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="SIGN UP"
+                    android:textSize="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    />
+            </RelativeLayout>
+
+
+            <com.zoptal.blitz.common.MyTextView
+        android:id="@+id/tv_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALREADY A MEMBER?"
+        android:textColor="#a9a9a9"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="12dp"
+        android:layout_gravity="center_horizontal"
+       />
+            <com.zoptal.blitz.common.MyTextView
+                android:id="@+id/tv_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+</LinearLayout>
+
+        </com.zoptal.blitz.common.InteractiveScrollView>
+    </LinearLayout>

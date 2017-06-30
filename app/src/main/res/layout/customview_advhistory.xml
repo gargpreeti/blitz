@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+      android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+
+       android:background="@drawable/layoutstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp">
+
+        <RelativeLayout
+            android:layout_marginRight="5dp"
+          android:layout_toLeftOf="@+id/img_repost"
+            android:id="@+id/rel_history"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+        <com.zoptal.blitz.common.MyTextView
+    android:id="@+id/tv_hisname"
+    android:text="dummy text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    android:textSize="14dp"
+     android:layout_marginRight="35dp"
+    android:layout_marginBottom="5dp"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_repost"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_dlt"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/nxtadvhistory"/>
+
+        <ImageView
+           android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:id="@+id/img_dlt"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/delete_icon"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

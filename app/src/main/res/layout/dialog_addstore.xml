@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    android:background="@drawable/popupbck"
+
+      >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+         android:background="@drawable/crosswhite"
+            android:layout_gravity="right"
+            android:layout_marginTop="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="1dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@mipmap/popup"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/relativeLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:background="#ffffff"-->
+            <!--android:orientation="horizontal"-->
+           <!--&gt;-->
+            <!--<ImageView-->
+                <!--android:id="@+id/tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:gravity="right"-->
+                <!--android:layout_marginTop="1dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:background="@mipmap/cross"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_marginBottom="1dp"-->
+                <!--android:textStyle="bold" />-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/relative_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#FDEEEE">
+
+            <com.zoptal.blitz.common.EditTextView
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Name"
+                android:capitalize="sentences"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColorHint="#a9a9a9"
+                android:textColor="#000000"
+                android:layout_margin="5dp"
+                android:textSize="14dp"
+                android:textCursorDrawable="@drawable/blackcursor"
+                />
+
+            <!--<TimePicker-->
+                <!--android:id="@+id/timePicker1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"/>-->
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#FDEEEE">
+
+            <AutoCompleteTextView
+                android:id="@+id/ed_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Address"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColorHint="#a9a9a9"
+                android:textColor="#000000"
+                android:layout_margin="5dp"
+                android:textSize="14dp"
+                android:textCursorDrawable="@drawable/blackcursor"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#FDEEEE">
+
+            <com.zoptal.blitz.common.EditTextView
+                android:id="@+id/ed_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Phone num"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColorHint="#a9a9a9"
+                android:textColor="#000000"
+                android:layout_margin="5dp"
+                android:textSize="14dp"
+                android:inputType="number"
+                android:textCursorDrawable="@drawable/blackcursor"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/rel_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/rel_account"
+            android:layout_marginTop="10dp"
+         >
+
+       <LinearLayout
+
+           android:layout_weight="1"
+            android:id="@+id/relative_stime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="#FDEEEE">
+            <com.zoptal.blitz.common.EditTextView
+                android:id="@+id/ed_stime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Opening Time"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColorHint="#a9a9a9"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:padding="3dp"
+                android:textCursorDrawable="@drawable/blackcursor"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+                android:id="@+id/relative_endtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:background="#FDEEEE">
+                <com.zoptal.blitz.common.EditTextView
+                    android:id="@+id/ed_endtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Closing Time"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:textColorHint="#a9a9a9"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textCursorDrawable="@drawable/blackcursor"
+                    />
+
+
+      </LinearLayout>
+</LinearLayout>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:text="SAVE"
+            android:id="@+id/btn_save"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+            android:background="#5F5D53"
+            android:layout_marginBottom="5dp"
+            />
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_below="@+id/rel_account"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:gravity="center_horizontal">-->
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:text="SAVE"-->
+                <!--android:id="@+id/btn_save"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="16dp"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

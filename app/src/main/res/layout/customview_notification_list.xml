@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/coloroffwhite"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rel_list"
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/notificationgold"/>
+
+
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_name"
+            android:hint="Dummy data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:textColorHint="#808080"
+            android:layout_toRightOf="@+id/img"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="180dp"
+            android:layout_marginLeft="20dp"/>
+
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_time"
+            android:hint="10.00 am"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:layout_alignParentRight="true"
+            android:textSize="12dp"
+            android:textColorHint="#808080"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_time"
+            android:background="@drawable/timex"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:textColor="#808080"
+            android:layout_toLeftOf="@+id/tv_time"
+            android:textSize="12dp"
+            android:layout_marginTop="7dp"
+            />
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_date"
+            android:hint="10.00 am"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:textSize="12dp"
+            android:textColorHint="#808080"
+            android:layout_toLeftOf="@+id/img_time"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_date"
+            android:background="@drawable/calendarx"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:textColor="#808080"
+            android:layout_toLeftOf="@+id/tv_date"
+            android:textSize="12dp"
+            android:layout_marginTop="7dp"
+            />
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_name1"
+            android:hint="Dummy data hsferher grjtgbgbd "
+            android:layout_marginTop="5dp"
+            android:textColorHint="#808080"
+            android:layout_below="@+id/tv_name"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:layout_toRightOf="@+id/img"
+            android:textSize="14dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+
+
+        <ImageView
+            android:id="@+id/img_dlt"
+            android:background="@drawable/delete_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="#808080"
+            android:layout_marginRight="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_name"
+            android:textSize="12dp"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_name1"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

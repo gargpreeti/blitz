@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1">
+
+    <com.zoptal.blitz.common.InteractiveScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linear"
+            android:orientation="vertical">
+
+
+
+            <com.zoptal.blitz.common.EditTextView
+                android:id="@+id/ed_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textfieldborder"
+                android:hint="First Name"
+                android:textColorHint="#a9a9a9"
+                android:textColor="#808080"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textCursorDrawable="@drawable/blackcursor"/>
+            <com.zoptal.blitz.common.EditTextView
+                android:id="@+id/ed_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textfieldborder"
+                android:hint="Last Name"
+                android:textColorHint="#a9a9a9"
+                android:textColor="#808080"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textCursorDrawable="@drawable/blackcursor"/>
+            <com.zoptal.blitz.common.EditTextView
+                android:id="@+id/ed_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textfieldborder"
+                android:hint="Billing Address"
+                android:textColorHint="#a9a9a9"
+                android:textColor="#808080"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="8dp"
+                android:textCursorDrawable="@drawable/blackcursor"/>
+            <com.zoptal.blitz.common.EditTextView
+                android:id="@+id/ed_cardno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textfieldborder"
+                android:hint="Credit Card Number"
+                android:textColorHint="#a9a9a9"
+                android:textColor="#808080"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textCursorDrawable="@drawable/blackcursor"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.zoptal.blitz.common.EditTextView
+                    android:id="@+id/ed_mnth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textfieldborder"
+                    android:hint="01"
+                    android:layout_weight="1"
+                    android:textColorHint="#a9a9a9"
+                    android:textColor="#808080"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="8dp"
+                    android:textCursorDrawable="@drawable/blackcursor"/>
+
+                <com.zoptal.blitz.common.EditTextView
+                    android:id="@+id/ed_exp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textfieldborder"
+                    android:hint="Exp.[yyyy]"
+                    android:textColorHint="#a9a9a9"
+                    android:textColor="#808080"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="8dp"
+                    android:textCursorDrawable="@drawable/blackcursor"/>
+
+            </LinearLayout>
+            <com.zoptal.blitz.common.EditTextView
+                android:id="@+id/ed_cvvcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textfieldborder"
+                android:hint="CVV Code"
+                android:textColorHint="#a9a9a9"
+                android:textColor="#808080"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textCursorDrawable="@drawable/blackcursor"/>
+
+            <com.zoptal.blitz.common.EditTextView
+                android:id="@+id/ed_cardtype"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/textfieldborder"
+                android:hint="Card Type"
+                android:textColorHint="#a9a9a9"
+                android:textColor="#808080"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textCursorDrawable="@drawable/blackcursor"/>
+
+
+        </LinearLayout>
+
+        </com.zoptal.blitz.common.InteractiveScrollView>
+    </LinearLayout>

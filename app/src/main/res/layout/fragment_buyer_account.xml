@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1">
+
+    <com.zoptal.blitz.common.InteractiveScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linear"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></LinearLayout>
+            <ImageView
+                android:id="@+id/img_cross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:background="@mipmap/crossblack"
+                android:textColor="#000000"
+                android:layout_marginRight="20dp"
+                android:textSize="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="right"/>
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/user_img"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@mipmap/user"
+                               />
+
+            <RelativeLayout
+            android:id="@+id/relative_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/textfieldborderclr">
+
+                <com.zoptal.blitz.common.EditTextView
+               android:id="@+id/ed_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@android:color/transparent"
+               android:hint="Name"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+               android:textColorHint="#a9a9a9"
+               android:textColor="#000000"
+               android:layout_margin="7dp"
+               android:textSize="14dp"
+               android:textCursorDrawable="@drawable/blackcursor"
+                />
+       </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative_changepw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textfieldborderclr">
+
+                <com.zoptal.blitz.common.EditTextView
+                    android:id="@+id/ed_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="email"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColorHint="#a9a9a9"
+                    android:textColor="#000000"
+                    android:layout_margin="7dp"
+                    android:textSize="14dp"
+                    android:textCursorDrawable="@drawable/blackcursor"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:background="#5F5D53"
+                    android:text="CLEAR"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"/>
+
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:background="#5F5D53"
+                    android:text="Save"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#ffffff"/>
+
+
+
+
+
+
+            </RelativeLayout>
+</LinearLayout>
+
+        </com.zoptal.blitz.common.InteractiveScrollView>
+    </LinearLayout>

@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "190305946484",
+    "firebase_url": "https://blitzapp-161109.firebaseio.com",
+    "project_id": "blitzapp-161109",
+    "storage_bucket": "blitzapp-161109.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190305946484:android:89a0475eb3e8cf97",
+        "android_client_info": {
+          "package_name": "com.zoptal.blitz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190305946484-7k1hk2v1e04uj7lq80a5qjb1hd0g4kel.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "190305946484-mk0bn7uhi3uie5hvkel0daf6u1e6fh7j.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "190305946484-keda0hc0508284gq0jt3hvfq53lslt59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoptal.blitz",
+            "certificate_hash": "3240a853ede470a743ad2faa21bca80757ee387a"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmCRYNnyEP3kitTM6hq4bDP7mjrfgC36w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190305946484-7k1hk2v1e04uj7lq80a5qjb1hd0g4kel.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+ >
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+          android:id="@+id/imageView">
+
+
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:hint="option 1"/>
+
+
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_adv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="48dp"
+            android:layout_centerHorizontal="true"
+            android:text="Advertisment"/>
+
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="90dp"
+            android:layout_centerHorizontal="true"
+            android:text="10"/>
+
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="109.00"
+            android:textSize="16dp"
+            android:layout_marginTop="145dp"
+            android:layout_centerHorizontal="true"
+       />
+
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_dlr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="7dp"
+            android:textSize="18dp"
+            android:text="$"
+            android:layout_marginTop="145dp"
+            android:layout_toLeftOf="@+id/tv_price"
+            />
+        <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_cad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:paddingTop="14dp"
+            android:textSize="14dp"
+            android:text="CAD"
+            android:layout_marginTop="145dp"
+            android:layout_toRightOf="@+id/tv_price"
+            />
+    </RelativeLayout>
+</LinearLayout>

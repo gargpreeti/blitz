@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+              android:orientation="vertical">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"></include>
+
+        <LinearLayout
+            android:id="@+id/activity_main_content_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+               android:orientation="vertical">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@mipmap/slide_menu_background"
+        android:id="@+id/leftLL"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="120dp">
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:orientation="vertical">-->
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/logo"
+                android:textColor="#ffffff"
+                />
+
+            <ImageView
+                android:id="@+id/bckimg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:background="@mipmap/cross"
+              />
+
+            <com.zoptal.blitz.common.MyTextView
+                android:id="@+id/tv_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:textColor="#ffffff"
+                 android:text="Logout"
+                />
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:clickable="false"
+                android:layout_marginTop="115dp"
+                android:focusableInTouchMode="false" />
+
+            <!--</RelativeLayout>-->
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerView"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1"
+            android:scrollbars="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+
+           android:layout_gravity="end"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content">
+
+            <com.zoptal.blitz.common.MyTextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="LOGIN"
+           android:textSize="18dp"
+            android:layout_marginRight="20dp"
+           android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+
+            />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_user"
+                android:visibility="gone"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@mipmap/user_icon"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                />
+            <com.zoptal.blitz.common.MyTextView
+                android:visibility="gone"
+                android:id="@+id/tv_usrname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="username"
+                android:textSize="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@+id/img_user"
+                android:layout_marginRight="10dp"
+                android:textColor="#F1F1F1"
+                />
+
+            <com.zoptal.blitz.common.MyTextView
+                android:visibility="gone"
+                android:id="@+id/tv_promocode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="code"
+                android:textSize="12dp"
+                android:layout_toLeftOf="@+id/img_user"
+                android:layout_marginRight="35dp"
+                android:layout_below="@+id/tv_usrname"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#F1F1F1"
+                />
+            </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

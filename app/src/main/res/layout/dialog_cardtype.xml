@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/popupbck"
+
+      >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_cross"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+         android:background="@drawable/crosswhite"
+            android:layout_gravity="right"
+            android:layout_marginTop="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="1dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/popup_back"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+      <RelativeLayout
+          android:background="#382f30"
+          android:layout_width="match_parent"
+          android:layout_height="40dp">
+
+
+          <TextView
+              android:id="@+id/tv_head"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@android:color/transparent"
+              android:textColor="#ffffff"
+              android:textAllCaps="false"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:text="Select"
+              android:textSize="16dp"
+              />
+      </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_weight="1"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:id="@+id/btn_cncl"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:background="#ecf0f1"
+                />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:id="@+id/btn_confirm"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:background="#382f30"
+            />
+        </LinearLayout>
+</LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_below="@+id/rel_account"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:gravity="center_horizontal">-->
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:text="SAVE"-->
+                <!--android:id="@+id/btn_save"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="16dp"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
